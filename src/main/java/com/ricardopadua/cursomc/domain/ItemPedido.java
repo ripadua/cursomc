@@ -97,4 +97,7 @@ public class ItemPedido implements Serializable {
 		return true;
 	}
 
+	public Double getSubTotal() {
+		return (preco - desconto) * quantidade;
+	}
 }
